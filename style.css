@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #C6ADFA, #5869FA);
+    font-family: "Raleway", sans-serif;
+    background-repeat: repeat-x;
+    margin: 0;
+    min-height: 100%;
+}
+
+nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegacao > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navegacao a:hover {
+    background-color: #6b74fab0;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    padding: 20px;
+    max-width: 2000px;
+}
+
+.conteudo {
+    width: 50vw;
+    margin: auto;
+    height: 350px;
+    max-width: 500px;
+    margin-right: 100px;
+    position: relative;
+    left: 5%;
+    text-align: start;
+
+}
+
+.conteudo h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.conteudo p {
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    margin-bottom: 30px;
+}
+
+.btn-conteudo {
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #24CAFA;
+    color: #fff;
+    box-shadow: 1px 1px 8px rgb(189, 189, 189);
+    transition: 0.3s;
+}
+
+.btn-conteudo:hover {
+    background-color: #24ccfab9;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.login {
+    width: 50vw;
+    color: #fff;
+    margin: auto;
+    height: 350px;
+}
+
+.login > form {
+    display: flex;
+    height: 350px;
+    width: 350px;
+    flex-direction: column;
+    background-color: #9b71f7;
+    opacity: 0.8;
+    padding: 20px;
+    text-align: center;
+    margin-right: 30px;
+    position: relative;
+    left: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.705);
+}
+
+.login h1 {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.login > form > input {
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 12px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+input::placeholder {
+    font-family:"Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.btn-register {
+    width: 200px;
+    margin:  0 auto;
+    margin-top: 12px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #C35AFA;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px rgba(255, 255, 255, 0.678);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #b64cf0b6;
+    transform: scale(1.1);
+}
+
+@media (max-width:1210px ) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+        height: 100vh;
+    }
+
+    .conteudo {
+        width: 90%;
+        max-width: 70%;
+        height: 100vh;
+        left: 1%;
+        margin-bottom: 100px;
+    }
+    
+    .login {
+        width: 90%;
+        max-width: 90%;
+        height: 100vh;
+    }
+
+    .login > form {
+        width: 80%;
+        max-width: 350px ;
+        margin: 0 auto;
+        left: 0;
+    }
+
+    body {
+        padding-bottom: 200px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    .navegacao {
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo h1 {
+        font-size: 2.4rem;
+    }
+
+    .conteudo p {
+        font-size: 1.4rem;
+    }
+    .login form {
+        padding-bottom: 30px;
+    }
+
+    .btn-register {
+        width: 70%;
+
+    }
+    
+}
+
+@media (max-width: 320px) {
+
+    .navegacao {
+        margin-bottom: 0;
+    }
+    
+    .navegacao  a{
+        font-size: 1rem;
+    }
+
+    .conteudo h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .conteudo p {
+        font-size: 1rem;
+    }
+
+    .btn-conteudo {
+        margin-bottom: 0;
+    }
+}
